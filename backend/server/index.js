@@ -1,12 +1,12 @@
 import express from 'express';
 //import path from 'path';
 //import './config/db';
-//import middlewareConfig from './config/middlewares';
+import middlewareConfig from './config/middlewares';
 
 const app = express();
 
 //middlewares
-// middlewareConfig(app);
+middlewareConfig(app);
 
 //app.use('/api', []);
 
