@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-//import './config/db';
+import './config/db';
 import middlewareConfig from './config/middlewares';
 
 const app = express();
@@ -8,7 +8,7 @@ const app = express();
 //middlewares
 middlewareConfig(app);
 
-//app.use('/api', []);
+//app.use('/api', [Routes]);
 
 
 app.get('/*', (req, res) => {
