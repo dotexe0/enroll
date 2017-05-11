@@ -2,13 +2,14 @@ import express from 'express';
 import path from 'path';
 import './config/db';
 import middlewareConfig from './config/middlewares';
+import { UserRoutes } from './modules/users';
 
 const app = express();
 
 //middlewares
 middlewareConfig(app);
 
-//app.use('/api', [Routes]);
+app.use('/api', [UserRoutes]);
 
 
 app.get('/*', (req, res) => {
