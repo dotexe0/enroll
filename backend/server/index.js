@@ -1,14 +1,15 @@
 import express from 'express';
-//import path from 'path';
-//import './config/db';
-//import middlewareConfig from './config/middlewares';
+import path from 'path';
+import './config/db';
+import middlewareConfig from './config/middlewares';
+import { UserRoutes } from './modules/users';
 
 const app = express();
 
 //middlewares
-// middlewareConfig(app);
+middlewareConfig(app);
 
-//app.use('/api', []);
+app.use('/api', [UserRoutes]);
 
 
 app.get('/*', (req, res) => {
