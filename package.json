@@ -1,0 +1,9 @@
+{
+  "name": "ethereummaps",
+  "version": "1.0.0",
+  "description": "maps for eth currency acceptance",
+  "main": "index.js",
+  "repository": "https://github.com/dotexe0/enroll.git",
+  "author": "dotexe0 <dotexe0@gmail.com>",
+  "license": "MIT"
+}
