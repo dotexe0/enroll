@@ -9,6 +9,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "leaflet": "^1.0.3",
+    "mapbox-gl": "^0.37.0",
     "material-ui": "^0.18.1",
     "normalize.css": "^7.0.0",
     "react": "^15.5.4",
