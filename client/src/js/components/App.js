@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-
+import CryptoMap from './CryptoMap';
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <h2>Welcome to React</h2>
+          <h2>Welcome to asdasd</h2>
+          <CryptoMap />
         {this.props.children}
       </div>
-
     );
   }
 }

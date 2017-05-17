@@ -20,7 +20,7 @@ export const signup = (email, password) => async dispatch => {
       const { events, email } = res.data.user.local;
       dispatch({ type: SIGNUP, payload: { events, email, _id }});
       toastr.success('Success', `${email} account created!`);
-      browserHistory.push('/createEvent');
+      browserHistory.push('/maps');
     })
   } catch (e) {
     console.log('error signing up...', e)
@@ -37,7 +37,7 @@ export const login = (email, password) => async dispatch => {
       const { events, email } = res.data.user.local;
       dispatch({ type: LOGIN, payload: { events, email, _id }});
       toastr.success(`${email} logged in!`, ':-)');
-      browserHistory.push('/createEvent');
+      browserHistory.push('/maps');
     })
   } catch (e) {
     toastr.warning(`Error logging in.`, 'Make sure username and password match!');

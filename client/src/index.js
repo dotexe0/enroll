@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 import store from './js/store';
 
 import App from './js/components/App';
-import Map from './js/components/Map';
+import CryptoMap from './js/components/CryptoMap';
 // import NavBar from './js/components/NavBar';
 import SignupForm from './js/components/SignupForm';
 import LoginForm from './js/components/LoginForm';
@@ -31,6 +31,7 @@ const routes = (
     <Router history={history}>
       <Switch>
         <Route exact path="/" component={App} />
+        <Route path="/maps" component={CryptoMap} />
         <Route path="/login" component={LoginForm} />
         <Route path="signup" component={SignupForm} />
       </Switch>
