@@ -5,7 +5,6 @@ class App extends Component {
     return (
       <div className="App">
           <h2>Welcome to asdasd</h2>
-          <CryptoMap />
         {this.props.children}
       </div>
     );
