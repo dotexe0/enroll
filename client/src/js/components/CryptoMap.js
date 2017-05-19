@@ -7,6 +7,8 @@ const stamenTonerAttr = 'Map tiles by <a href="http://stamen.com">Stamen Design<
 
 
 class CryptoMap extends Component {
+
+
   render() {
     return (
       <Map
