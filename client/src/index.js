@@ -14,6 +14,9 @@ import CryptoMap from './js/components/CryptoMap';
 // import NavBar from './js/components/NavBar';
 import SignupForm from './js/components/SignupForm';
 import LoginForm from './js/components/LoginForm';
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 // import './css/index.css';
 
   //  <ReduxToastr
