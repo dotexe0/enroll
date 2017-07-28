@@ -5,7 +5,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 class PlaceCard extends Component {
+
   render() {
+    const style = {
+      img: {
+        width: '100%',
+        height: '100%',
+        border: '10px solid red',
+        boxSizing: 'border-box'
+      },
+
+    }
       const { name, location, position, img, rating } = this.props;
     return (
       <MuiThemeProvider>
@@ -15,7 +25,7 @@ class PlaceCard extends Component {
             subtitle={ location }
             avatar={ rating }
           />
-            <img src={ img } />
+            <img src={ img } style={ style.img }/>
           <CardText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
@@ -31,7 +41,6 @@ class PlaceCard extends Component {
 
     )
   }
-
 };
 
 export default PlaceCard;
