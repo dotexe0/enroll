@@ -9,7 +9,7 @@ class App extends Component {
 
     return (
         <div className="App">
-            <h2>Welcome to asdasd</h2>
+          <h2>Welcome to asdasd</h2>
           {this.props.children}
         </div>
 
